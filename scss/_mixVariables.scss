@@ -1,0 +1,21 @@
+// Hyundai color
+
+$bg-color: #e3e3e3;
+
+$main-color: #4c7366;
+$main-secondary: #113f43;
+
+$gray-darker: #2f2f2f;
+$gray-dark: #535353;
+$gray-medium: #747474;
+$gray-light: #9c9c9c;
+$gray-lighter: #c4c4c4;
+
+$w100: 100%;
+
+// margin xy 10px
+@mixin gridbox($height, $width: $w100, $grid: 0 10px) {
+  width: $width;
+  height: $height;
+  padding: $grid;
+}

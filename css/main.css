@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: 360px;
+  max-width: 412px;
+  background-color: #e3e3e3;
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.hdrWrap {
+  width: 100%;
+  background: #e3e3e3;
+  border-bottom: 1px solid #4c7366;
+}
+.hdrWrap header {
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hdrWrap header button {
+  flex: 1;
+}
+.hdrWrap header h1 {
+  flex: 2;
+  line-height: 60px;
+  text-align: center;
+}
+.hdrWrap header h1 img {
+  height: 40px;
+  vertical-align: middle;
+}
+.hdrWrap header nav {
+  flex: 1;
+  text-align: right;
+}
+.hdrWrap header nav i {
+  margin-left: 15px;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.magazine {
+  width: 100%;
+}
+.magazine header {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.magazine section {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.magazine section .slideScroll {
+  width: 300%;
+  height: 100px;
+  background: #2f2f2f;
+}
+.magazine section .slideScroll article {
+  width: 100%;
+  height: 100px;
+  background: #4c7366;
+}
+
+/*# sourceMappingURL=main.css.map */
