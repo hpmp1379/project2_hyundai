@@ -24,8 +24,11 @@ body {
   max-width: 412px;
   background-color: $bg-color;
   border: 1px solid red;
+  font-size: 14px;
 }
-
+ul,li {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -44,3 +47,7 @@ h6 {
   font-weight: bold;
   font-weight: 700;
 }
+
+h1 {font-size: 48px;}
+h2 {font-size: 36px;}
+h3 {font-size: 24px;}

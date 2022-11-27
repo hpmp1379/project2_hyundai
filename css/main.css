@@ -20,8 +20,13 @@ body {
   height: 100%;
   min-width: 360px;
   max-width: 412px;
-  background-color: #e3e3e3;
+  background-color: #fff;
   border: 1px solid red;
+  font-size: 14px;
+}
+
+ul, li {
+  list-style: none;
 }
 
 a {
@@ -44,9 +49,21 @@ h6 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 .hdrWrap {
   width: 100%;
-  background: #e3e3e3;
+  background: #fff;
   border-bottom: 1px solid #4c7366;
 }
 .hdrWrap header {
@@ -79,6 +96,45 @@ h6 {
   line-height: 60px;
 }
 
+.ftrWrap {
+  width: 100%;
+  background: #2f2f2f;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.ftrWrap footer {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  border: 1px solid red;
+}
+.ftrWrap footer .ftrTop {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+}
+.ftrWrap footer .ftrTop ul.sub:nth-of-type(2n) {
+  margin-top: 30px;
+}
+.ftrWrap footer .ftrTop li {
+  margin-top: 15px;
+}
+.ftrWrap footer .ftrTop .ftrLeft {
+  flex: 1;
+}
+.ftrWrap footer .ftrTop .ftrRight {
+  flex: 1;
+}
+.ftrWrap footer .ftrBottom {
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+.ftrWrap footer .ftrBottom li {
+  margin-top: 15px;
+}
+
 .magazine {
   width: 100%;
 }
@@ -101,6 +157,172 @@ h6 {
   width: 100%;
   height: 100px;
   background: #4c7366;
+}
+
+.loginBanner {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background: url("../img/login_banner1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.loginBanner .texts {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  color: #e7e7e7;
+  padding-top: 40px;
+  font-size: 20px;
+}
+.loginBanner .texts p {
+  display: inline-block;
+  line-height: 30px;
+  text-shadow: 1px 1px 1px #313131;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginBox header {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+.loginBox section {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.loginBox section p.tooltip {
+  padding-left: 10px;
+}
+.loginBox section form.login_form {
+  margin-top: 5px;
+}
+.loginBox section form.login_form:nth-of-type(2) {
+  margin-top: 10px;
+}
+.loginBox section form.login_form .login_form_id {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  background-color: #eaeaea;
+  color: #535353;
+  padding-left: 10px;
+  border: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.loginBox section form.login_form .login_form_pw {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  margin-top: 20px;
+  background-color: #eaeaea;
+  color: #535353;
+  padding-left: 10px;
+  border: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.loginBox section form.login_form .login_form_check {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin-top: 15px;
+}
+.loginBox section form.login_form label {
+  font-size: 16px;
+  vertical-align: super;
+  margin-right: 10px;
+}
+.loginBox section form.login_form .login_form_btn {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  background: #4c7366;
+  color: #e7e7e7;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.loginBox section ul.login_acc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 10px;
+  color: #9c9c9c;
+}
+.loginBox section ul.login_acc li:hover {
+  color: #535353;
+}
+.loginBox section .login_quick {
+  text-align: center;
+  margin-top: 60px;
+}
+.loginBox section .login_quick p {
+  width: 100%;
+}
+.loginBox section .login_quick .login_sns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.loginBox section .login_quick .login_sns button {
+  width: calc(50% - 5px);
+  height: 60px;
+  padding: 0 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.loginBox section .login_quick .login_sns #naver {
+  background-color: #03c75a;
+}
+.loginBox section .login_quick .login_sns #kakao {
+  background-color: #fae100;
+}
+
+.shopMain {
+  width: 100%;
+  height: 390px;
+  padding: 0;
+  background-color: #fc0;
+}
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  position: relative;
+}
+section .shopInfo {
+  width: 100%;
+  height: 250px;
+  padding: 0 10px;
+  max-width: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: -50px;
+  border-radius: 5px;
+  background: rgba(233, 233, 233, 0.8);
+}
+section .shopInfo h3 {
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+}
+section .shopInfo h3::after {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  content: "";
+  width: 90%;
+  max-width: 300px;
+  border: 1px solid black;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */

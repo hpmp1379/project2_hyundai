@@ -1,0 +1,108 @@
+.loginBanner {
+    @include box(100px, 100%, 0);
+    background: url('../img/login_banner1.jpg');
+    @include bgprops();
+
+    .texts {
+        @include box(auto);
+        color: $text-light;
+        padding-top: 40px;
+        font-size: 20px;
+        p{
+            // width: 100%;
+            display: inline-block;
+            line-height: 30px;
+            // font-weight: bold;
+            text-shadow: 1px 1px 1px $text-dark;
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+}
+
+.loginBox {
+    header{
+        @include box(auto);
+        text-align: center;
+        margin-top: 40px;
+    }
+    section {
+        @include box(auto);
+        p.tooltip{
+            padding-left: 10px;
+        }
+        form.login_form{
+            margin-top: 5px;
+            &:nth-of-type(2){
+                margin-top: 10px;
+            }
+            .login_form_id {
+                @include box(60px, 100%, 0);
+                background-color: $gray-lightest;
+                color: $gray-dark;
+                padding-left: 10px;
+                border: 0;
+                box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+            }
+            .login_form_pw {
+                @include box(60px, 100%, 0);
+                margin-top: 20px;
+                background-color: $gray-lightest;
+                color: $gray-dark;
+                padding-left: 10px;
+                border: 0;
+                box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+            }
+            .login_form_check {
+                @include box(25px, 25px, 0);
+                margin-top: 15px;
+            }
+            label {
+                font-size:16px;
+                vertical-align: super;
+                margin-right: 10px;
+            }
+            .login_form_btn {
+                @include box(60px, 100%, 0);
+                background: $main-color;
+                color: $text-light;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        ul.login_acc {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding: 0 10px;
+            color: $gray-light;
+            li{
+                &:hover {
+                    color: $gray-dark;
+                }}
+        }
+        .login_quick {
+            text-align: center;
+            margin-top: 60px;
+            p {width: 100%;}
+            .login_sns {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                button {
+                    @include box(60px, calc(50% - 5px));
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                }
+                #naver {
+                    background-color: $naver;
+                }
+                #kakao {
+                    background-color: $kakao;
+                }
+            }
+
+        }
+    }
+}
