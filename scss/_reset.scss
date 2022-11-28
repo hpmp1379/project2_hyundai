@@ -16,17 +16,18 @@
   font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
 }
 html {
+  max-width: 412px;
   height: 100%;
 }
 body {
-  height: 100%;
+  height: fit-content;
   min-width: 360px;
-  max-width: 412px;
   background-color: $bg-color;
   border: 1px solid red;
   font-size: 14px;
 }
-ul,li {
+ul,
+li {
   list-style: none;
 }
 a {
@@ -48,6 +49,15 @@ h6 {
   font-weight: 700;
 }
 
-h1 {font-size: 48px;}
-h2 {font-size: 36px;}
-h3 {font-size: 24px;}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}

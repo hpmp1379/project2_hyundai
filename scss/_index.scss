@@ -16,7 +16,7 @@
       text-align: center;
       img {
         height: 40px;
-        vertical-align: middle;
+        vertical-align: -5%;
       }
     }
     nav {
@@ -36,31 +36,33 @@
   color: #fff;
   padding-top: 80px;
   padding-bottom: 40px;
-  footer{
+  footer {
     @include box(100%);
     border: 1px solid red;
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-between;
     // flex-direction: column;
-    .ftrTop{
+    .ftrTop {
       width: 100%;
       padding: 0 10px;
-      ul.sub{ 
-        &:nth-of-type(2n){
+      ul.sub {
+        &:nth-of-type(2n) {
           margin-top: 30px;
         }
       }
-      li {margin-top: 15px;}
-      display: flex;
-      .ftrLeft{ 
-        flex:1;
+      li {
+        margin-top: 15px;
       }
-      .ftrRight{ 
+      display: flex;
+      .ftrLeft {
+        flex: 1;
+      }
+      .ftrRight {
         flex: 1;
       }
     }
-    .ftrBottom{
+    .ftrBottom {
       width: 100%;
       margin-top: 40px;
       padding: 0 10px;

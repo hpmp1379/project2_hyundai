@@ -13,19 +13,20 @@
 }
 
 html {
+  max-width: 412px;
   height: 100%;
 }
 
 body {
-  height: 100%;
+  height: fit-content;
   min-width: 360px;
-  max-width: 412px;
   background-color: #fff;
   border: 1px solid red;
   font-size: 14px;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -61,6 +62,10 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 .hdrWrap {
   width: 100%;
   background: #fff;
@@ -84,7 +89,7 @@ h3 {
 }
 .hdrWrap header h1 img {
   height: 40px;
-  vertical-align: middle;
+  vertical-align: -5%;
 }
 .hdrWrap header nav {
   flex: 1;
@@ -163,7 +168,7 @@ h3 {
   width: 100%;
   height: 100px;
   padding: 0;
-  background: url("../img/login_banner1.jpg");
+  background: url("../img/login_banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,8 +184,7 @@ h3 {
 .loginBanner .texts p {
   display: inline-block;
   line-height: 30px;
-  text-shadow: 1px 1px 1px #313131;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px #313131;
 }
 
 .loginBox header {
@@ -287,34 +291,37 @@ h3 {
   width: 100%;
   height: 390px;
   padding: 0;
-  background-color: #fc0;
 }
-section {
+.shopMain img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shop_container {
   width: 100%;
   height: auto;
   padding: 0 10px;
-  position: relative;
+  transform: translateY(-50px);
 }
-section .shopInfo {
+.shop_container .shopInfo {
   width: 100%;
-  height: 250px;
+  height: 300px;
   padding: 0 10px;
-  max-width: 350px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  max-width: 370px;
   margin: 0 auto;
-  margin-top: -50px;
   border-radius: 5px;
-  background: rgba(233, 233, 233, 0.8);
+  background-color: rgba(222, 222, 222, 0.7);
 }
-section .shopInfo h3 {
+.shop_container .shopInfo h3 {
+  width: 100%;
   text-align: center;
   line-height: 60px;
   position: relative;
 }
-section .shopInfo h3::after {
+.shop_container .shopInfo h3::after {
   position: absolute;
   top: 50px;
   left: 50%;
@@ -323,6 +330,72 @@ section .shopInfo h3::after {
   max-width: 300px;
   border: 1px solid black;
   transform: translateX(-50%);
+}
+.shop_container .shopInfo .texts #shop_type {
+  line-height: 40px;
+}
+.shop_container .shopInfo .texts #shop_name {
+  font-size: 24px;
+}
+.shop_container .shopInfo .texts .shop_contact {
+  margin-top: 15px;
+}
+.shop_container .shopInfo .texts .shop_contact p {
+  line-height: 20px;
+}
+.shop_container .shopInfo .texts .shop_contact #address {
+  margin-top: 15px;
+}
+.shop_container .shopBtn {
+  width: 100%;
+  padding: 0 10px;
+}
+.shop_container .shopBtn button {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #4c7366;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.events {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.events header {
+  text-align: center;
+  padding: 40px 0;
+}
+.events section article:nth-of-type(1) .img {
+  background-image: url("../img/sub2/event_banner1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -250px;
+}
+.events section article:nth-of-type(2) .img {
+  background-image: url("../img/sub2/event_banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.events section article:nth-of-type(3) .img {
+  background-image: url("../img/sub2/event_banner3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -80px;
+}
+.events section article .img {
+  width: 100%;
+  height: 280px;
+  padding: 0 10px;
+}
+.events section article .texts {
+  padding: 20px 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

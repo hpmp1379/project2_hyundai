@@ -1,0 +1,35 @@
+.events {
+  @include box(auto);
+  header {
+    text-align: center;
+    padding: 40px 0;
+  }
+  section {
+    article {
+      &:nth-of-type(1) {
+        .img {
+          background-image: url("../img/sub2/event_banner1.jpg");
+          @include bgprops(cover, center -250px);
+        }
+      }
+      &:nth-of-type(2) {
+        .img {
+          background-image: url("../img/sub2/event_banner2.png");
+          @include bgprops(cover);
+        }
+      }
+      &:nth-of-type(3) {
+        .img {
+          background-image: url("../img/sub2/event_banner3.jpg");
+          @include bgprops(cover, center -80px);
+        }
+      }
+      .img {
+        @include box(280px);
+      }
+      .texts {
+        padding: 20px 10px;
+      }
+    }
+  }
+}

@@ -26,8 +26,8 @@ $w100: 100%;
   padding: $grid;
 }
 
-@mixin bgprops($size: cover){
+@mixin bgprops($size: cover, $pos: center) {
   background-size: $size;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: $pos;
 }
