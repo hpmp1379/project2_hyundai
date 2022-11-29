@@ -77,28 +77,57 @@ h4 {
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .hdrWrap header button {
-  flex: 1;
+  width: 33.33%;
+  text-align-last: left;
+}
+.hdrWrap header button i {
+  cursor: pointer;
+  font-size: 20px;
 }
 .hdrWrap header h1 {
-  flex: 2;
+  width: 33.33%;
   line-height: 60px;
   text-align: center;
 }
 .hdrWrap header h1 img {
   height: 40px;
   vertical-align: -5%;
+  cursor: pointer;
 }
 .hdrWrap header nav {
-  flex: 1;
+  width: 33.33%;
   text-align: right;
 }
 .hdrWrap header nav i {
   margin-left: 15px;
   font-size: 20px;
   line-height: 60px;
+  cursor: pointer;
+}
+
+.pagination_main {
+  margin-top: 20px;
+}
+.pagination_main section {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.pagination_main section ul {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination_main section ul li {
+  text-align: center;
+  padding: 0 10px;
+}
+.pagination_main section ul li a i {
+  font-size: 30px;
+}
+.pagination_main section ul li a p {
+  margin-top: 10px;
 }
 
 .ftrWrap {
@@ -141,7 +170,8 @@ h4 {
 }
 
 .magazine {
-  width: 100%;
+  padding: 40px 0;
+  overflow-x: hidden;
 }
 .magazine header {
   width: 100%;
@@ -153,15 +183,115 @@ h4 {
   height: auto;
   padding: 0 10px;
 }
-.magazine section .slideScroll {
+.magazine section .sideScroll {
   width: 300%;
-  height: 100px;
-  background: #2f2f2f;
+  display: flex;
 }
-.magazine section .slideScroll article {
+.magazine section .sideScroll article {
   width: 100%;
-  height: 100px;
-  background: #4c7366;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.magazine section .sideScroll article .image {
+  width: 100%;
+  height: 280px;
+  padding: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.magazine section .sideScroll article .texts {
+  margin-top: 10px;
+  text-align: center;
+}
+.magazine section .sideScroll #magazine1 .image {
+  background-image: url("../img/magazine1.jpg");
+}
+.magazine section .sideScroll #magazine2 .image {
+  background-image: url("../img/magazine2.jpg");
+}
+.magazine section .sideScroll #magazine3 .image {
+  background-image: url("../img/magazine3.jpg");
+}
+.magazine section .sideScroll #magazine4 .image {
+  background-image: url("../img/magazine4.jpg");
+}
+
+.bannerBrand {
+  overflow-x: hidden;
+  background-color: #4c7366;
+  padding: 40px 0;
+}
+.bannerBrand header {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.bannerBrand header h3 {
+  line-height: 1;
+  color: #f3f3f3;
+}
+.bannerBrand section {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+.bannerBrand section .bannerBrand_sideScroll {
+  width: 760px;
+  display: flex;
+}
+.bannerBrand section .bannerBrand_sideScroll :nth-of-type(2n) {
+  margin-top: 60px;
+}
+.bannerBrand section .bannerBrand_sideScroll :nth-of-type(2n) .image {
+  border-radius: 50%;
+}
+.bannerBrand section .bannerBrand_sideScroll article {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.bannerBrand section .bannerBrand_sideScroll article .image {
+  width: 100%;
+  height: 150px;
+  background-color: #4c7366;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bannerBrand section .bannerBrand_sideScroll article .texts {
+  margin-top: 10px;
+  text-align: center;
+}
+.bannerBrand section .bannerBrand_sideScroll article .texts p {
+  font-size: 16px;
+  color: #f3f3f3;
+}
+.bannerBrand section .bannerBrand_sideScroll #bannerBrand1 .image {
+  background-image: url("../img/bannerBrand_peer.png");
+}
+.bannerBrand section .bannerBrand_sideScroll #bannerBrand2 .image {
+  background-image: url("../img/bannerBrand_hbyh.png");
+}
+.bannerBrand section .bannerBrand_sideScroll #bannerBrand3 .image {
+  background-image: url("../img/bannerBrand_fourm.png");
+}
+.bannerBrand section .bannerBrand_sideScroll #bannerBrand4 .image {
+  background-image: url("../img/bannerBrand_tg.png");
+}
+
+.bannerEvent {
+  margin-top: 60px;
+}
+.bannerEvent header {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+.bannerEvent header h3 {
+  line-height: 40px;
 }
 
 .loginBanner {
@@ -177,7 +307,7 @@ h4 {
   width: 100%;
   height: auto;
   padding: 0 10px;
-  color: #e7e7e7;
+  color: #f3f3f3;
   padding-top: 40px;
   font-size: 20px;
 }
@@ -245,7 +375,7 @@ h4 {
   height: 60px;
   padding: 0;
   background: #4c7366;
-  color: #e7e7e7;
+  color: #f3f3f3;
   font-size: 20px;
   border: none;
   cursor: pointer;

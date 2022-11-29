@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> E현대백화점</title>
+    <title>E현대백화점</title>
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/ea416fc906.js"
@@ -16,9 +16,7 @@
     <div class="hdrWrap">
       <header>
         <button class="menu">
-          <span class="icon_bar"></span>
-          <span class="icon_bar"></span>
-          <span class="icon_bar"></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <h1><img src="img/logo.png" alt="" /></h1>
         <nav>
@@ -29,7 +27,7 @@
     </div>
 
     <!-- main -->
-    <div class="mainWrap">
+    <!-- <div class="mainWrap">
       <main>
         <article>
           <div class="image"></div>
@@ -43,8 +41,38 @@
           <i class="fa-regular fa-circle-pause"></i>
         </button>
       </div>
-    </div>
+    </div> -->
     <!-- pagination -->
+    <div class="pagination_main">
+      <section>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-city"></i><br />
+              <p>지점찾기</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-calendar-days"></i><br />
+              <p>행사안내</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-utensils"></i><br />
+              <p>식당안내</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-people-group"></i><br />
+              <p>문화센터</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <!-- content1 -->
     <div class="content magazine">
@@ -53,67 +81,79 @@
       </header>
       <section>
         <div class="sideScroll">
-          <article>
+          <article id="magazine1">
             <div class="image"></div>
-            <div class="texts"><p>11월</p></div>
+            <div class="texts"><p>'22 November</p></div>
           </article>
-          <article>
+          <article id="magazine2">
             <div class="image"></div>
-            <div class="texts"><p>10월</p></div>
+            <div class="texts"><p>'22 October'</p></div>
           </article>
-          <article>
+          <article id="magazine3">
             <div class="image"></div>
-            <div class="texts"><p>9월</p></div>
+            <div class="texts"><p>'22 September</p></div>
+          </article>
+          <article id="magazine4">
+            <div class="image"></div>
+            <div class="texts"><p>'22 August</p></div>
           </article>
         </div>
       </section>
     </div>
 
     <!-- banner1 -->
-    <div class="content bannerRec">
+    <div class="content bannerBrand">
       <header>
         <h3>Brand</h3>
       </header>
       <section>
-        <div class="banner sideScroll">
-          <article>
+        <div class="bannerBrand_sideScroll">
+          <article id="bannerBrand1">
             <div class="image"></div>
-            <div class="texts"><p>11월</p></div>
+            <div class="texts"><p>PEER</p></div>
           </article>
-          <article>
+          <article id="bannerBrand2">
             <div class="image"></div>
-            <div class="texts"><p>10월</p></div>
+            <div class="texts"><p>HBYH</p></div>
           </article>
-          <article>
+          <article id="bannerBrand3">
             <div class="image"></div>
-            <div class="texts"><p>9월</p></div>
+            <div class="texts"><p>FOURM</p></div>
+          </article>
+          <article id="bannerBrand4">
+            <div class="image"></div>
+            <div class="texts"><p>TOM GREYHOUND</p></div>
           </article>
         </div>
       </section>
     </div>
 
     <!-- content2 -->
-    <div class="content magazine">
+    <div class="content bannerEvent">
       <header>
         <h3>Only At H</h3>
       </header>
       <section>
         <article>
           <div class="image"></div>
-          <a href="more">자세히 보기</a>
         </article>
         <article>
           <div class="image"></div>
-          <a href="more">자세히 보기</a>
+          <div class="btn">
+            <button class="more">자세히 보기</button>
+          </div>
         </article>
         <article>
           <div class="image"></div>
-          <a href="more">자세히 보기</a>
+          <div class="btn">
+            <button class="more">자세히 보기</button>
+          </div>
         </article>
       </section>
     </div>
+
     <!-- banner2 -->
-    <div class="content magazine">
+    <!-- <div class="content magazine">
       <section>
         <article>
           <div class="image"></div>
@@ -125,7 +165,8 @@
           <div class="image"></div>
         </article>
       </section>
-    </div>
+    </div> -->
+
     <!-- footer -->
     <div class="ftrWrap">
       <footer>
@@ -168,37 +209,46 @@
           <!-- dropdown -->
           <div class="ftrDropdown">
             <button class="famSite" id="famSite">
-                한국어
-                <!-- 클릭했을때 remove/add class -->
-                <ion-icon name="chevron-up-outline" role="img" class="md hydrated" aria-label="chevron down outline"></ion-icon>
-                <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
+              한국어
+              <!-- 클릭했을때 remove/add class -->
+              <ion-icon
+                name="chevron-up-outline"
+                role="img"
+                class="md hydrated"
+                aria-label="chevron down outline"
+              ></ion-icon>
+              <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
             </button>
-            <ul class="langBox" style="display: block;">
-                <li><a href="#">한국어</a></li>
+            <ul class="langBox" style="display: block">
+              <li><a href="#">한국어</a></li>
             </ul>
-        </div>
+          </div>
           <!-- dropdown -->
           <div class="ftrDropdown">
             <button class="langSel" id="langSel">
-                한국어
-                <!-- 클릭했을때 remove/add class -->
-                <ion-icon name="chevron-up-outline" role="img" class="md hydrated" aria-label="chevron down outline"></ion-icon>
-                <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
+              한국어
+              <!-- 클릭했을때 remove/add class -->
+              <ion-icon
+                name="chevron-up-outline"
+                role="img"
+                class="md hydrated"
+                aria-label="chevron down outline"
+              ></ion-icon>
+              <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
             </button>
-            <ul class="langBox" style="display: block;">
-                <li><a href="#">한국어</a></li>
-                <li><a href="#">EN</a></li>
-                <li><a href="#">日本語</a></li>
-                <li><a href="#">中文(简体)</a></li>
-                <li><a href="#">中文(繁體)</a></li>
+            <ul class="langBox" style="display: block">
+              <li><a href="#">한국어</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">日本語</a></li>
+              <li><a href="#">中文(简体)</a></li>
+              <li><a href="#">中文(繁體)</a></li>
             </ul>
-        </div>
+          </div>
           <h2 class="logo"></h2>
           <h2 class="logo"></h2>
           <h2 class="logo"></h2>
           <p>Copyright</p>
         </div>
-        
       </footer>
     </div>
   </body>
