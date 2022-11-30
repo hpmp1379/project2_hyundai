@@ -25,6 +25,46 @@
         </nav>
       </header>
     </div>
+    <div class="sideMenu">
+      <header>
+        <h2 class="logo"><img src="img/logo.png" alt="hyundai logo"></h2>
+        <div class="bottom">
+          <h3>환영합니다</h3>
+          <nav>
+            <i class="fa-solid fa-user"></i>
+            <a href="#">로그인</a>
+          </nav>
+        </div>
+      </header>
+      <section>
+        <ul>
+          <li class="sideMenu_item">지점안내</li>
+          <li><a href="#">지점찾기</a></li>
+          <li><a href="#">오늘 길</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">서비스ㆍ콘텐츠</li>
+          <li><a href="#">프리미엄 서비스</a></li>
+          <li><a href="#">클럽서비스</a></li>
+          <li><a href="#">고객서비스</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">채널</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">브랜드</li>
+          <li><a href="#">패션 앤 뷰티</a></li>
+          <li><a href="#">리빙 앤 라이프스타일</a></li>
+          <li><a href="#">현대식품관</a></li>
+          <li><a href="#">프리미엄 쇼룸</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">문화센터ㆍ전시ㆍ공연</li>
+          <li><a href="#">Ch1985</a></li>
+          <li><a href="#">문화센터</a></li>
+          <li><a href="#">전시 공연</a></li>
+        </ul>
+      </section>
+    </div>
 
     <!-- main -->
     <!-- <div class="mainWrap">
@@ -47,26 +87,26 @@
       <section>
         <ul>
           <li>
-            <a href="#">
+            <a href="/sub1_shop.html">
               <i class="fa-solid fa-city"></i><br />
               <p>지점찾기</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/sub2_event.html">
               <i class="fa-solid fa-calendar-days"></i><br />
               <p>행사안내</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/sub3_restaurant.html">
               <i class="fa-solid fa-utensils"></i><br />
               <p>식당안내</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <i class="fa-solid fa-people-group"></i><br />
+              <i class="fa-solid fa-icons"></i><br />
               <p>문화센터</p>
             </a>
           </li>
@@ -134,21 +174,26 @@
         <h3>Only At H</h3>
       </header>
       <section>
-        <article>
-          <div class="image"></div>
-        </article>
-        <article>
-          <div class="image"></div>
-          <div class="btn">
-            <button class="more">자세히 보기</button>
-          </div>
-        </article>
-        <article>
-          <div class="image"></div>
-          <div class="btn">
-            <button class="more">자세히 보기</button>
-          </div>
-        </article>
+        <div class="carousel">
+          <article id="bannerEvent2">
+            <div class="image"></div>
+            <div class="btn">
+              <button class="more">자세히 보기</button>
+            </div>
+          </article>
+          <article class="active-carousel" id="bannerEvent1">
+            <div class="image"></div>
+            <div class="btn">
+              <button class="more">자세히 보기</button>
+            </div>
+          </article>
+          <article id="bannerEvent3">
+            <div class="image"></div>
+            <div class="btn">
+              <button class="more">자세히 보기</button>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
 
@@ -182,7 +227,6 @@
               <li><a href="#">개인정보처리방침</a></li>
               <li><a href="#">웹접근성 안내</a></li>
               <li><a href="#">사이트맵</a></li>
-              <li><a href="#">주요문의처</a></li>
             </ul>
           </div>
           <div class="ftrRight">
@@ -191,11 +235,11 @@
               <li><a href="#">주요문의처</a></li>
             </ul>
             <ul class="sub">
-              <li><a href="#">유투브</a></li>
-              <li><a href="#">인스타그램</a></li>
-              <li><a href="#">페이스북</a></li>
-              <li><a href="#">블로그</a></li>
-              <li><a href="#">포스트</a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i>유투브</a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i>인스타그램</a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i>페이스북</a></li>
+              <li><a href="#"><i class="fa-brands fa-blogger"></i>블로그</a></li>
+              <li><a href="#"><i class="fa-brands fa-square-pied-piper"></i>포스트</a></li>
             </ul>
           </div>
         </div>
@@ -206,37 +250,12 @@
             <li>개인정보관리책임: 회원운영관리담당 장근혁</li>
             <li>통신판매업 신고: 강남-01882</li>
           </ul>
-          <!-- dropdown -->
           <div class="ftrDropdown">
-            <button class="famSite" id="famSite">
+            <button class="langSel" id="langSel"> 
               한국어
-              <!-- 클릭했을때 remove/add class -->
-              <ion-icon
-                name="chevron-up-outline"
-                role="img"
-                class="md hydrated"
-                aria-label="chevron down outline"
-              ></ion-icon>
-              <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
+              <i class="fa-solid fa-caret-down"></i>
             </button>
-            <ul class="langBox" style="display: block">
-              <li><a href="#">한국어</a></li>
-            </ul>
-          </div>
-          <!-- dropdown -->
-          <div class="ftrDropdown">
-            <button class="langSel" id="langSel">
-              한국어
-              <!-- 클릭했을때 remove/add class -->
-              <ion-icon
-                name="chevron-up-outline"
-                role="img"
-                class="md hydrated"
-                aria-label="chevron down outline"
-              ></ion-icon>
-              <!-- <ion-icon name="chevron-up-outline"></ion-icon> -->
-            </button>
-            <ul class="langBox" style="display: block">
+            <ul class="langBox">
               <li><a href="#">한국어</a></li>
               <li><a href="#">EN</a></li>
               <li><a href="#">日本語</a></li>
@@ -244,10 +263,30 @@
               <li><a href="#">中文(繁體)</a></li>
             </ul>
           </div>
-          <h2 class="logo"></h2>
-          <h2 class="logo"></h2>
-          <h2 class="logo"></h2>
-          <p>Copyright</p>
+          <div class="ftrDropdown">
+            <button id="familySite">
+              Family Site
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="famBox">
+              <li><a href="#">현대백화점그룹</a></li>
+              <li><a href="#">현대백화점</a></li>
+              <li><a href="#">현대홈쇼핑</a></li>
+              <li><a href="#">현대그린푸드</a></li>
+              <li><a href="#">현대캐터링시스템</a></li>
+              <li><a href="#">S푸드시스템</a></li>
+              <li><a href="#">한섬</a></li>
+              <li><a href="#">현대리바트</a></li>
+              <li><a href="#">현대드림투어</a></li>
+              <li><a href="#">현대백화점면세점</a></li>
+            </ul>
+          </div>
+          <div class="ftrLogos">
+            <h2><img src="/img/ftrlogo1.png" alt="footer logo1"></h2>
+            <h2><img src="/img/ftrlogo2.png" alt="footer logo2"></h2>
+            <h2><img src="/img/ftrlogo3.png" alt="footer logo3"></h2>
+          </div>
+          <p id="copyright">© Hyundai Department Store. All rights reserved.</p>
         </div>
       </footer>
     </div>

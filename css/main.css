@@ -13,13 +13,14 @@
 }
 
 html {
-  max-width: 412px;
+  max-width: 390px;
   height: 100%;
 }
 
 body {
   height: fit-content;
   min-width: 360px;
+  max-width: 390px;
   background-color: #fff;
   border: 1px solid red;
   font-size: 14px;
@@ -38,6 +39,7 @@ a {
 button {
   background: none;
   border: initial;
+  color: inherit;
 }
 
 h1,
@@ -69,7 +71,7 @@ h4 {
 .hdrWrap {
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #4c7366;
+  border-bottom: 1px solid #28502E;
 }
 .hdrWrap header {
   width: 100%;
@@ -107,6 +109,73 @@ h4 {
   cursor: pointer;
 }
 
+.sideMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  padding: 0;
+  background-color: #28502E;
+  box-shadow: 61px 0 0 rgba(0, 0, 0, 0.5);
+}
+.sideMenu header {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.sideMenu header h2.logo {
+  line-height: 40px;
+  margin-top: 10px;
+}
+.sideMenu header h2.logo img {
+  height: 40px;
+}
+.sideMenu header h2.logo::after {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  display: block;
+  margin: 0 auto;
+}
+.sideMenu header .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.sideMenu header .bottom h3 {
+  padding-left: 5px;
+  line-height: 40px;
+}
+.sideMenu header .bottom nav {
+  line-height: 40px;
+  font-size: 16px;
+}
+.sideMenu header .bottom nav a {
+  text-decoration: underline;
+  margin-left: 3px;
+}
+.sideMenu section {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+.sideMenu section ul li.sideMenu_item {
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-left: 0;
+  font-weight: bold;
+}
+.sideMenu section ul li {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
 .pagination_main {
   margin-top: 20px;
 }
@@ -141,7 +210,6 @@ h4 {
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  border: 1px solid red;
 }
 .ftrWrap footer .ftrTop {
   width: 100%;
@@ -151,7 +219,7 @@ h4 {
 .ftrWrap footer .ftrTop ul.sub:nth-of-type(2n) {
   margin-top: 30px;
 }
-.ftrWrap footer .ftrTop li {
+.ftrWrap footer .ftrTop ul.sub li {
   margin-top: 15px;
 }
 .ftrWrap footer .ftrTop .ftrLeft {
@@ -160,13 +228,75 @@ h4 {
 .ftrWrap footer .ftrTop .ftrRight {
   flex: 1;
 }
+.ftrWrap footer .ftrTop .ftrRight ul.sub li a i {
+  margin-right: 10px;
+}
 .ftrWrap footer .ftrBottom {
   width: 100%;
-  margin-top: 40px;
   padding: 0 10px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.ftrWrap footer .ftrBottom li {
+.ftrWrap footer .ftrBottom ul.sub {
+  width: 100%;
+}
+.ftrWrap footer .ftrBottom ul.sub li {
   margin-top: 15px;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown {
+  flex: 1;
+  padding: 0 10px;
+  margin-top: 40px;
+  position: relative;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown button {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  line-height: 20px;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown button i {
+  margin-left: 10px;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown ul {
+  position: absolute;
+  width: calc(100% - 20px);
+  text-align: center;
+  border: 1px solid #9c9c9c;
+  border-radius: 3px;
+  background-color: #1f1f1f;
+  bottom: 25px;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown ul li {
+  padding: 3px 0;
+  border-radius: 3px;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown ul li:hover {
+  background-color: #9c9c9c;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown ul.langBox {
+  display: none;
+}
+.ftrWrap footer .ftrBottom .ftrDropdown ul.famBox {
+  display: none;
+}
+.ftrWrap footer .ftrBottom .ftrLogos {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.ftrWrap footer .ftrBottom .ftrLogos h2 {
+  flex: 1;
+}
+.ftrWrap footer .ftrBottom .ftrLogos h2 img {
+  height: 100%;
+}
+.ftrWrap footer .ftrBottom #copyright {
+  margin-top: 20px;
 }
 
 .magazine {
@@ -219,8 +349,8 @@ h4 {
 
 .bannerBrand {
   overflow-x: hidden;
-  background-color: #4c7366;
-  padding: 40px 0;
+  background-color: #28502E;
+  padding: 80px 0;
 }
 .bannerBrand header {
   width: 100%;
@@ -256,7 +386,7 @@ h4 {
 .bannerBrand section .bannerBrand_sideScroll article .image {
   width: 100%;
   height: 150px;
-  background-color: #4c7366;
+  background-color: #28502E;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +413,7 @@ h4 {
 }
 
 .bannerEvent {
-  margin-top: 60px;
+  padding: 80px 0;
 }
 .bannerEvent header {
   width: 100%;
@@ -292,6 +422,66 @@ h4 {
 }
 .bannerEvent header h3 {
   line-height: 40px;
+}
+.bannerEvent section {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-top: 40px;
+  overflow-x: hidden;
+}
+.bannerEvent section .carousel {
+  width: 580px;
+  border: 1px solid red;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.bannerEvent section .carousel #bannerEvent1 .image {
+  background-image: url("../img/bannerEvent1.jpg");
+}
+.bannerEvent section .carousel #bannerEvent2 .image {
+  background-image: url("../img/bannerEvent2.jpg");
+}
+.bannerEvent section .carousel #bannerEvent3 .image {
+  background-image: url("../img/bannerEvent3.jpg");
+}
+.bannerEvent section .carousel article {
+  width: 240px;
+}
+.bannerEvent section .carousel article .image {
+  width: 100%;
+  height: 340px;
+  border: 1px solid green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bannerEvent section .carousel article .btn {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+.bannerEvent section .carousel article .btn button {
+  width: 80%;
+  height: 30px;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #47682C;
+  color: #f3f3f3;
+  font-size: 16px;
+}
+.bannerEvent section .carousel article:nth-of-type(2) {
+  margin-left: -70px;
+}
+.bannerEvent section .carousel article:nth-of-type(2) .btn {
+  display: block;
+}
+.bannerEvent section .carousel article:nth-of-type(3) {
+  margin-left: -70px;
+}
+.bannerEvent section .carousel .active-carousel {
+  margin-top: 40px;
 }
 
 .loginBanner {
@@ -374,7 +564,7 @@ h4 {
   width: 100%;
   height: 60px;
   padding: 0;
-  background: #4c7366;
+  background: #28502E;
   color: #f3f3f3;
   font-size: 20px;
   border: none;
@@ -484,12 +674,23 @@ h4 {
   width: 100%;
   height: 40px;
   padding: 0 10px;
-  background-color: #4c7366;
+  background-color: #28502E;
   margin-top: 15px;
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
+}
+
+.shopDropdown {
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+  background-color: #28502E;
+  padding-top: 80px;
+}
+.shopDropdown header h3 {
+  text-align: center;
 }
 
 .events {
