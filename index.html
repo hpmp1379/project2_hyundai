@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E현대백화점</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/ea416fc906.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script defer src="js/index.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -27,7 +38,7 @@
     </div>
     <div class="sideMenu">
       <header>
-        <h2 class="logo"><img src="img/logo.png" alt="hyundai logo"></h2>
+        <h2 class="logo"><img src="img/logo.png" alt="hyundai logo" /></h2>
         <div class="bottom">
           <h3>환영합니다</h3>
           <nav>
@@ -198,19 +209,21 @@
     </div>
 
     <!-- banner2 -->
-    <!-- <div class="content magazine">
+    <div class="content bannerSns">
       <section>
-        <article>
-          <div class="image"></div>
-        </article>
-        <article>
-          <div class="image"></div>
-        </article>
-        <article>
-          <div class="image"></div>
-        </article>
+        <div class="banner_scroll">
+          <article>
+            <div class="image"></div>
+          </article>
+          <article>
+            <div class="image"></div>
+          </article>
+          <article>
+            <div class="image"></div>
+          </article>
+        </div>
       </section>
-    </div> -->
+    </div>
 
     <!-- footer -->
     <div class="ftrWrap">
@@ -235,11 +248,23 @@
               <li><a href="#">주요문의처</a></li>
             </ul>
             <ul class="sub">
-              <li><a href="#"><i class="fa-brands fa-youtube"></i>유투브</a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i>인스타그램</a></li>
-              <li><a href="#"><i class="fa-brands fa-facebook"></i>페이스북</a></li>
-              <li><a href="#"><i class="fa-brands fa-blogger"></i>블로그</a></li>
-              <li><a href="#"><i class="fa-brands fa-square-pied-piper"></i>포스트</a></li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i>유투브</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i>인스타그램</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i>페이스북</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-blogger"></i>블로그</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-square-pied-piper"></i>포스트</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -251,7 +276,7 @@
             <li>통신판매업 신고: 강남-01882</li>
           </ul>
           <div class="ftrDropdown">
-            <button class="langSel" id="langSel"> 
+            <button class="langSel" id="langSel">
               한국어
               <i class="fa-solid fa-caret-down"></i>
             </button>
@@ -282,9 +307,9 @@
             </ul>
           </div>
           <div class="ftrLogos">
-            <h2><img src="/img/ftrlogo1.png" alt="footer logo1"></h2>
-            <h2><img src="/img/ftrlogo2.png" alt="footer logo2"></h2>
-            <h2><img src="/img/ftrlogo3.png" alt="footer logo3"></h2>
+            <h2><img src="/img/ftrlogo1.png" alt="footer logo1" /></h2>
+            <h2><img src="/img/ftrlogo2.png" alt="footer logo2" /></h2>
+            <h2><img src="/img/ftrlogo3.png" alt="footer logo3" /></h2>
           </div>
           <p id="copyright">© Hyundai Department Store. All rights reserved.</p>
         </div>
