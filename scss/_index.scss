@@ -325,7 +325,7 @@
         .image {
           @include box(280px, 100%);
           background-repeat: no-repeat;
-          background-position: center;
+          background-position: top;
           background-size: cover;
         }
         .texts {

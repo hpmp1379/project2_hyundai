@@ -384,7 +384,7 @@ h4 {
   height: 280px;
   padding: 0 10px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 .magazine section .sideScroll article .texts {
