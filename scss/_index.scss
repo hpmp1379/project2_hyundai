@@ -42,14 +42,14 @@
 }
 // sideMenu
 .sideMenu {
-  display: none;
-
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
+  z-index: 10;
   @include box(100%, 350px, 0);
-  background-color: $main-color;
-  box-shadow: 61px 0 0 rgba(0, 0, 0, 0.5);
+  background-color: $bg-color;
+  box-shadow: 40px 0 0 rgb(40, 80, 46, 0.9);
+  transition: left 0.5s ease-out;
   header {
     @include box(auto);
     h2.logo {
@@ -104,6 +104,17 @@
         margin-left: 20px;
         font-size: 16px;
       }
+    }
+  }
+  .menuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    i {
+      font-size: 30px;
+      color: $gray-darkest;
+      cursor: pointer;
     }
   }
 }
@@ -191,6 +202,7 @@
           border: 1px solid $gray-lightest;
           border-radius: 3px;
           line-height: 20px;
+          cursor: pointer;
           i {
             margin-left: 10px;
           }
@@ -237,6 +249,60 @@
   }
 }
 
+// main Content gallery
+.mainWrap {
+  // background-image: url("../img/mainImg1.jpg");
+  background-color: $gray-lightest;
+  // border: 1px solid red;
+  main {
+    @include box(auto);
+    box-shadow: 5px 5px 5px black;
+    button {
+      display: none !important;
+    }
+    #mainImg1 {
+      .image {
+        background-image: url("../img/mainImg1.jpg");
+      }
+    }
+    #mainImg2 {
+      .image {
+        background-image: url("../img/mainImg2.jpg");
+      }
+    }
+    #mainImg3 {
+      .image {
+        background-image: url("../img/mainImg3.jpg");
+      }
+    }
+    .mainActive {
+      display: block;
+    }
+    article {
+      display: none;
+      .image {
+        width: 100%;
+        height: 320px;
+        background-color: $main-color;
+        border-radius: 10px;
+        @include bgprops();
+        box-shadow: 0px 30px 30px rgba(77, 77, 77, 0.8);
+      }
+      // .texts {
+      //   margin: 0 10px;
+      //   padding: 20px 10px;
+      //   border-radius: 10px;
+      //   transform: translateY(-80%);
+      // }
+    }
+  }
+  .mainSlideCount {
+    padding: 0 10px;
+    margin-top: 40px;
+    text-align: right;
+  }
+}
+
 // Content 1 Magazine
 .magazine {
   padding: 40px 0;
@@ -250,7 +316,9 @@
       width: $w100 * 3;
       display: flex;
       // border: 2px solid blue;
-
+      button {
+        display: none !important;
+      }
       article {
         width: $w100;
         margin-top: 20px;
@@ -308,10 +376,13 @@
     .bannerBrand_sideScroll {
       width: calc(190px * 4);
       display: flex;
+      button {
+        display: none !important;
+      }
       :nth-of-type(2n) {
         margin-top: 60px;
         .image {
-          border-radius: 50%;
+          // border-radius: 50%;
         }
       }
       article {
@@ -321,7 +392,7 @@
         margin-right: 40px;
         .image {
           width: 100%;
-          height: 150px;
+          height: 215px;
           background-color: $main-color;
           background-size: cover;
           background-position: center;
@@ -400,7 +471,7 @@
           width: 100%;
           height: 340px;
           // border: 1px solid green;
-          @include bgprops();
+          @include bgprops(contain);
         }
         .btn {
           margin-top: 10px;
@@ -438,15 +509,39 @@
 }
 
 .bannerSns {
+  header {
+    @include box(auto);
+  }
   section {
+    margin-top: 10px;
     .banner_scroll {
+      button {
+        display: none !important;
+      }
       article {
         // width: 240px;
+        width: 240px;
         .image {
-          width: 100%;
+          width: 240px;
           height: 240px;
-          background-image: url("../img/bannerEvent1.jpg");
+          margin: 0 auto;
           border: 1px solid black;
+          @include bgprops();
+        }
+      }
+      #bannerSns1 {
+        .image {
+          background-image: url("../img/bannerSns1.jpg");
+        }
+      }
+      #bannerSns2 {
+        .image {
+          background-image: url("../img/bannerSns2.jpg");
+        }
+      }
+      #bannerSns3 {
+        .image {
+          background-image: url("../img/bannerSns3.jpg");
         }
       }
     }

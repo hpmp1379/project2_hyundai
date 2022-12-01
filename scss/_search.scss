@@ -1,0 +1,51 @@
+.searchWrap {
+  display: none; //shown when header > search icon clicked
+  background: rgba(40, 80, 46, 0.95);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: 390px;
+  z-index: 9;
+  h3 {
+    text-align: center;
+    color: $text-light;
+    margin-top: 40px;
+  }
+  form {
+    @include box(50px);
+    margin-top: 10px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 10px;
+      color: $gray-darkest;
+      box-shadow: none;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      font-size: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .searchClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    i {
+      font-size: 30px;
+      color: $gray-lightest;
+      cursor: pointer;
+    }
+  }
+}

@@ -22,7 +22,6 @@ body {
   min-width: 360px;
   max-width: 390px;
   background-color: #fff;
-  border: 1px solid red;
   font-size: 14px;
 }
 
@@ -71,7 +70,7 @@ h4 {
 .hdrWrap {
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #28502E;
+  border-bottom: 1px solid #28502e;
 }
 .hdrWrap header {
   width: 100%;
@@ -110,15 +109,16 @@ h4 {
 }
 
 .sideMenu {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
+  z-index: 10;
   width: 350px;
   height: 100%;
   padding: 0;
-  background-color: #28502E;
-  box-shadow: 61px 0 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  box-shadow: 40px 0 0 rgba(40, 80, 46, 0.9);
+  transition: left 0.5s ease-out;
 }
 .sideMenu header {
   width: 100%;
@@ -174,6 +174,17 @@ h4 {
   margin-top: 10px;
   margin-left: 20px;
   font-size: 16px;
+}
+.sideMenu .menuClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+.sideMenu .menuClose i {
+  font-size: 30px;
+  color: #1f1f1f;
+  cursor: pointer;
 }
 
 .pagination_main {
@@ -255,6 +266,7 @@ h4 {
   border: 1px solid #eaeaea;
   border-radius: 3px;
   line-height: 20px;
+  cursor: pointer;
 }
 .ftrWrap footer .ftrBottom .ftrDropdown button i {
   margin-left: 10px;
@@ -299,6 +311,49 @@ h4 {
   margin-top: 20px;
 }
 
+.mainWrap {
+  background-color: #eaeaea;
+}
+.mainWrap main {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  box-shadow: 5px 5px 5px black;
+}
+.mainWrap main button {
+  display: none !important;
+}
+.mainWrap main #mainImg1 .image {
+  background-image: url("../img/mainImg1.jpg");
+}
+.mainWrap main #mainImg2 .image {
+  background-image: url("../img/mainImg2.jpg");
+}
+.mainWrap main #mainImg3 .image {
+  background-image: url("../img/mainImg3.jpg");
+}
+.mainWrap main .mainActive {
+  display: block;
+}
+.mainWrap main article {
+  display: none;
+}
+.mainWrap main article .image {
+  width: 100%;
+  height: 320px;
+  background-color: #28502e;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 30px 30px rgba(77, 77, 77, 0.8);
+}
+.mainWrap .mainSlideCount {
+  padding: 0 10px;
+  margin-top: 40px;
+  text-align: right;
+}
+
 .magazine {
   padding: 40px 0;
   overflow-x: hidden;
@@ -316,6 +371,9 @@ h4 {
 .magazine section .sideScroll {
   width: 300%;
   display: flex;
+}
+.magazine section .sideScroll button {
+  display: none !important;
 }
 .magazine section .sideScroll article {
   width: 100%;
@@ -349,7 +407,7 @@ h4 {
 
 .bannerBrand {
   overflow-x: hidden;
-  background-color: #28502E;
+  background-color: #28502e;
   padding: 80px 0;
 }
 .bannerBrand header {
@@ -371,11 +429,11 @@ h4 {
   width: 760px;
   display: flex;
 }
+.bannerBrand section .bannerBrand_sideScroll button {
+  display: none !important;
+}
 .bannerBrand section .bannerBrand_sideScroll :nth-of-type(2n) {
   margin-top: 60px;
-}
-.bannerBrand section .bannerBrand_sideScroll :nth-of-type(2n) .image {
-  border-radius: 50%;
 }
 .bannerBrand section .bannerBrand_sideScroll article {
   width: 25%;
@@ -385,8 +443,8 @@ h4 {
 }
 .bannerBrand section .bannerBrand_sideScroll article .image {
   width: 100%;
-  height: 150px;
-  background-color: #28502E;
+  height: 215px;
+  background-color: #28502e;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -448,7 +506,7 @@ h4 {
 .bannerEvent section .carousel article .image {
   width: 100%;
   height: 340px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -462,7 +520,7 @@ h4 {
   height: 30px;
   padding: 0;
   border-radius: 10px;
-  background-color: #47682C;
+  background-color: #47682c;
   color: #f3f3f3;
   font-size: 16px;
 }
@@ -477,11 +535,37 @@ h4 {
   opacity: 0.5;
   z-index: -1;
 }
-.bannerSns section .banner_scroll article .image {
+.bannerSns header {
   width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.bannerSns section {
+  margin-top: 10px;
+}
+.bannerSns section .banner_scroll button {
+  display: none !important;
+}
+.bannerSns section .banner_scroll article {
+  width: 240px;
+}
+.bannerSns section .banner_scroll article .image {
+  width: 240px;
   height: 240px;
-  background-image: url("../img/bannerEvent1.jpg");
+  margin: 0 auto;
   border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bannerSns section .banner_scroll #bannerSns1 .image {
+  background-image: url("../img/bannerSns1.jpg");
+}
+.bannerSns section .banner_scroll #bannerSns2 .image {
+  background-image: url("../img/bannerSns2.jpg");
+}
+.bannerSns section .banner_scroll #bannerSns3 .image {
+  background-image: url("../img/bannerSns3.jpg");
 }
 
 .loginBanner {
@@ -564,7 +648,7 @@ h4 {
   width: 100%;
   height: 60px;
   padding: 0;
-  background: #28502E;
+  background: #28502e;
   color: #f3f3f3;
   font-size: 20px;
   border: none;
@@ -674,7 +758,7 @@ h4 {
   width: 100%;
   height: 40px;
   padding: 0 10px;
-  background-color: #28502E;
+  background-color: #28502e;
   margin-top: 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -686,7 +770,7 @@ h4 {
   width: 100%;
   max-width: 390px;
   height: 100vh;
-  background-color: #28502E;
+  background-color: #28502e;
   padding-top: 80px;
 }
 .shopDropdown header h3 {
@@ -727,6 +811,60 @@ h4 {
 }
 .events section article .texts {
   padding: 20px 10px;
+}
+
+.searchWrap {
+  display: none;
+  background: rgba(40, 80, 46, 0.95);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: 390px;
+  z-index: 9;
+}
+.searchWrap h3 {
+  text-align: center;
+  color: #f3f3f3;
+  margin-top: 40px;
+}
+.searchWrap form {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.searchWrap form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: #1f1f1f;
+  box-shadow: none;
+}
+.searchWrap form i {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.searchWrap form i:hover {
+  cursor: pointer;
+}
+.searchWrap .searchClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+.searchWrap .searchClose i {
+  font-size: 30px;
+  color: #eaeaea;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

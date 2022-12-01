@@ -10,6 +10,8 @@
       src="https://kit.fontawesome.com/ea416fc906.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <div class="hdrWrap">
@@ -17,13 +19,69 @@
         <button class="menu">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <h1><img src="img/logo.png" alt="" /></h1>
+        <h1>
+          <a href="index.html"><img src="img/logo.png" alt="home" /></a>
+        </h1>
         <nav>
-          <i class="fa-solid fa-earth-americas"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-earth-americas languageIcon"></i>
+          <i class="fa-solid fa-magnifying-glass searchIcon"></i>
         </nav>
       </header>
     </div>
+    <div class="sideMenu">
+      <header>
+        <h2 class="logo"><img src="img/logo.png" alt="hyundai logo" /></h2>
+        <div class="bottom">
+          <h3>환영합니다</h3>
+          <nav>
+            <i class="fa-solid fa-user"></i>
+            <a href="login.html">로그인</a>
+          </nav>
+        </div>
+      </header>
+      <section>
+        <ul>
+          <li class="sideMenu_item">지점안내</li>
+          <li><a href="#">지점찾기</a></li>
+          <li><a href="#">오늘 길</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">서비스ㆍ콘텐츠</li>
+          <li><a href="#">프리미엄 서비스</a></li>
+          <li><a href="#">클럽서비스</a></li>
+          <li><a href="#">고객서비스</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">채널</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">브랜드</li>
+          <li><a href="#">패션 앤 뷰티</a></li>
+          <li><a href="#">리빙 앤 라이프스타일</a></li>
+          <li><a href="#">현대식품관</a></li>
+          <li><a href="#">프리미엄 쇼룸</a></li>
+        </ul>
+        <ul>
+          <li class="sideMenu_item">문화센터ㆍ전시ㆍ공연</li>
+          <li><a href="#">Ch1985</a></li>
+          <li><a href="#">문화센터</a></li>
+          <li><a href="#">전시 공연</a></li>
+        </ul>
+      </section>
+      <div class="menuClose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <div class="searchWrap">
+      <h3>검색하기</h3>
+      <form>
+        <input type="text" placeholder="검색할 키워드를 입력하세요" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+      <div class="searchClose">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
     <div class="loginBanner">
       <div class="texts">
         <p>가입하고 다양한</p>
