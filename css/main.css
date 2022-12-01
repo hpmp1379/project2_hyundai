@@ -318,7 +318,6 @@ h4 {
   width: 100%;
   height: auto;
   padding: 0 10px;
-  box-shadow: 5px 5px 5px black;
 }
 .mainWrap main button {
   display: none !important;
