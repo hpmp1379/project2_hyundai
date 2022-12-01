@@ -21,7 +21,20 @@ $(function () {
   $(".ftrDropdown #langSel").on("click", function () {
     $("ul.langBox").slideToggle(300);
   });
-});
-$(".ftrDropdown #familySite").on("click", function () {
-  $("ul.famBox").slideToggle(300);
+  $(".ftrDropdown #familySite").on("click", function () {
+    $("ul.famBox").slideToggle(300);
+  });
+
+  // sub1 dropdown
+  $("#shop_change").on("click", function () {
+    $(".shopDropdown").fadeIn();
+  });
+  $(".shopClose").on("click", function () {
+    $(".shopDropdown").fadeOut();
+  });
+
+  $(".category p").on("click", function () {
+    $(this).find("ul.shop-dropdown li").css("display", "block");
+    console.log("first");
+  });
 });
