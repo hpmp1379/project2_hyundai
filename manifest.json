@@ -16,47 +16,47 @@
 
   "screenshots": [
     {
-      "src": "img/pwa/index.png",
+      "src": "/img/pwa/index.png",
       "sizes": "475x936",
       "types": "image/png"
     },
     {
-      "src": "img/pwa/login.png",
+      "src": "/img/pwa/login.png",
       "sizes": "496x935",
       "types": "image/png"
     },
     {
-      "src": "img/pwa/sub1.png",
+      "src": "/img/pwa/sub1.png",
       "sizes": "491x935",
       "types": "image/png"
     },
     {
-      "src": "img/pwa/sub2.png",
+      "src": "/img/pwa/sub2.png",
       "sizes": "475x935",
       "types": "image/png"
     }
   ],
   "icons": [
     {
-      "src": "img/icon1000.png",
+      "src": "/img/icon1000.png",
       "sizes": "1000x1000",
       "types": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icon512.png",
+      "src": "/img/icon512.png",
       "sizes": "512x512",
       "types": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "img/icon128.png",
+      "src": "/img/icon128.png",
       "sizes": "128x128",
       "types": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "img/icon48.png",
+      "src": "/img/icon48.png",
       "sizes": "48x48",
       "types": "image/png",
       "purpose": "maskable"
