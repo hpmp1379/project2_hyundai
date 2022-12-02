@@ -12,21 +12,20 @@
   "theme_color": "#ffffff",
   "gcm_sender_id": "",
   "gcm_user_visible_only": "true",
-  "categories": [],
 
   "screenshots": [
     {
-      "src": "/img/pwa/ss_index.png",
+      "src": "img/pwa/ss_index.png",
       "sizes": "475x936",
       "types": "image/png"
     },
     {
-      "src": "/img/pwa/ss_login.png",
+      "src": "img/pwa/ss_login.png",
       "sizes": "496x935",
       "types": "image/png"
     },
     {
-      "src": "/img/pwa/ss_sub1.png",
+      "src": "img/pwa/ss_sub1.png",
       "sizes": "491x935",
       "types": "image/png"
     },
@@ -61,7 +60,5 @@
       "types": "image/png",
       "purpose": "maskable"
     }
-  ],
-
-  "shortcuts": []
+  ]
 }
