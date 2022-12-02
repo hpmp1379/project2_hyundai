@@ -37,25 +37,25 @@
   ],
   "icons": [
     {
-      "src": "img/icon1000.png",
+      "src": "img/pwa/icon1000.png",
       "sizes": "1000x1000",
       "types": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icon512.png",
+      "src": "img/pwa/icon512.png",
       "sizes": "512x512",
       "types": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "img/icon128.png",
+      "src": "img/pwa/icon128.png",
       "sizes": "128x128",
       "types": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "img/icon48.png",
+      "src": "img/pwa/icon48.png",
       "sizes": "48x48",
       "types": "image/png",
       "purpose": "maskable"
