@@ -1,0 +1,21 @@
+{
+  "name": "현대백화점 Hyundai Dept",
+  "short_name": "hyundai",
+  "background_color": "#ffffff",
+  "description": "Project 2 PWA 적용",
+  "dir": "auto",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "https://hpmp1379.github.io/project2_hyundai/",
+  "start_url": "https://hpmp1379.github.io/project2_hyundai/",
+  "lang": "ko",
+  "theme_color": "#ffffff",
+  "gcm_sender_id": "",
+  "gcm_user_visible_only": "true",
+  "categories": [],
+
+  "screenshots": [],
+  "icons": [],
+
+  "shortcuts": []
+}

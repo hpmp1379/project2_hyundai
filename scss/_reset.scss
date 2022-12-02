@@ -16,13 +16,15 @@
   font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
 }
 html {
-  max-width: 390px;
+  min-width: 390px;
+  max-width: 500px;
   height: 100%;
+  // border: 1px solid red;
 }
 body {
   height: fit-content;
-  min-width: 360px;
-  max-width: 390px;
+  max-width: 500px;
+  min-width: 390px;
   background-color: $bg-color;
   // border: 1px solid red;
   font-size: 14px;

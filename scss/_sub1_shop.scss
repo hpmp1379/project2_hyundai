@@ -11,8 +11,8 @@
   @include box(auto);
   transform: translateY(-50px);
   .shopInfo {
-    @include box(300px, 100%);
-    max-width: 370px;
+    @include box(300px);
+    width: calc(100% - 20px);
     margin: 0 auto;
     border-radius: 5px;
 
