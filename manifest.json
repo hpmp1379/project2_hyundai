@@ -16,22 +16,22 @@
 
   "screenshots": [
     {
-      "src": "/img/pwa/index.png",
+      "src": "/img/pwa/ss_index.png",
       "sizes": "475x936",
       "types": "image/png"
     },
     {
-      "src": "/img/pwa/login.png",
+      "src": "/img/pwa/ss_login.png",
       "sizes": "496x935",
       "types": "image/png"
     },
     {
-      "src": "/img/pwa/sub1.png",
+      "src": "/img/pwa/ss_sub1.png",
       "sizes": "491x935",
       "types": "image/png"
     },
     {
-      "src": "/img/pwa/sub2.png",
+      "src": "/img/pwa/ss_sub2.png",
       "sizes": "475x935",
       "types": "image/png"
     }
