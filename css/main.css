@@ -26,6 +26,10 @@ body {
   font-size: 14px;
 }
 
+.slick-list, .slick-track {
+  height: 100%;
+}
+
 ul,
 li {
   list-style: none;
@@ -312,9 +316,6 @@ h4 {
   margin-top: 20px;
 }
 
-.mainWrap {
-  background-color: #eaeaea;
-}
 .mainWrap main {
   width: 100%;
   height: auto;
@@ -335,10 +336,12 @@ h4 {
 .mainWrap main .mainActive {
   display: block;
 }
-.mainWrap main article {
-  display: none;
+.mainWrap main article:not(.slick-current) .image {
+  transition-delay: 0;
 }
 .mainWrap main article .image {
+  transition: transform 0.3s linear;
+  transition-delay: 0.5s;
   width: 100%;
   height: 320px;
   background-color: #28502e;
@@ -350,8 +353,13 @@ h4 {
 }
 .mainWrap .mainSlideCount {
   padding: 0 10px;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: right;
+}
+.mainWrap .mainSlideCount .mainButton i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .magazine {
@@ -769,7 +777,7 @@ h4 {
 .shopDropdown {
   display: none;
   width: 100%;
-  max-width: 390px;
+  max-width: 500px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -792,7 +800,7 @@ h4 {
 .shopDropdown section .category p {
   font-size: 20px;
   padding: 0 20px;
-  line-height: 60px;
+  line-height: 80px;
 }
 .shopDropdown section .category ul.shop-dropdown {
   display: flex;
@@ -807,6 +815,9 @@ h4 {
   display: none;
   width: 50%;
   line-height: 30px;
+}
+.shopDropdown section .category ul.shop-dropdown li a {
+  display: block;
 }
 .shopDropdown section .category ul.shop-dropdown li:hover {
   text-decoration: underline;

@@ -1,9 +1,16 @@
-$(".mainWrap main").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
+//mainWrap carousel
+let mainCarousel = 
+  $(".mainWrap main").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    // autoplaySpeed: 2000,
+    // centerMode: true,
 });
+
+
+
 
 $(".bannerEvent section .carousel").slick({
   infinite: true,
