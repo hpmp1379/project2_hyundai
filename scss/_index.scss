@@ -31,11 +31,32 @@
       // flex: 1;
       width: 33.33%;
       text-align: right;
+      position: relative;
       i {
         margin-left: 15px;
         font-size: 20px;
         line-height: 60px;
         cursor: pointer;
+      }
+      ul.hdrLang {
+        position: absolute;
+        top: 61px; right: 10%;
+        z-index: 10;
+        background-color: $gray-lightest;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        li {
+          // display: none;
+          text-align-last: left;
+          padding: 10px;
+          a {
+            font-size: 14px;
+          }
+          &:hover{
+            background-color: $main-secondary;
+            color: $text-light;
+          }
+        }
       }
     }
   }
@@ -46,9 +67,9 @@
   top: 0;
   left: -100%;
   z-index: 10;
-  @include box(100%, 350px, 0);
+  @include box(100%,80%, 0);
   background-color: $bg-color;
-  box-shadow: 40px 0 0 rgb(40, 80, 46, 0.9);
+  // box-shadow: 40px 0 0 rgb(40, 80, 46, 0.9);
   transition: left 0.5s ease-out;
   header {
     @include box(auto);

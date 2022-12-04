@@ -105,6 +105,7 @@ h4 {
 .hdrWrap header nav {
   width: 33.33%;
   text-align: right;
+  position: relative;
 }
 .hdrWrap header nav i {
   margin-left: 15px;
@@ -112,17 +113,36 @@ h4 {
   line-height: 60px;
   cursor: pointer;
 }
+.hdrWrap header nav ul.hdrLang {
+  position: absolute;
+  top: 61px;
+  right: 10%;
+  z-index: 10;
+  background-color: #eaeaea;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.hdrWrap header nav ul.hdrLang li {
+  text-align-last: left;
+  padding: 10px;
+}
+.hdrWrap header nav ul.hdrLang li a {
+  font-size: 14px;
+}
+.hdrWrap header nav ul.hdrLang li:hover {
+  background-color: #47682c;
+  color: #f3f3f3;
+}
 
 .sideMenu {
   position: fixed;
   top: 0;
   left: -100%;
   z-index: 10;
-  width: 350px;
+  width: 80%;
   height: 100%;
   padding: 0;
   background-color: #fff;
-  box-shadow: 40px 0 0 rgba(40, 80, 46, 0.9);
   transition: left 0.5s ease-out;
 }
 .sideMenu header {
@@ -878,7 +898,7 @@ h4 {
   bottom: 0;
   width: 100%;
   height: 100vh;
-  max-width: 390px;
+  max-width: 500px;
   z-index: 9;
 }
 .searchWrap h3 {

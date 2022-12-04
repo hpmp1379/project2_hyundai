@@ -15,9 +15,11 @@ xhr.onload = function(){
       e.preventDefault();
       const aa = this.innerHTML;
       
-      let newShopInfo ='';
+      let newShopInfo ='',
+          newShopImg  ='';
       for(i=0; i<shopsInfo.length;i++){
         if(aa === shopsInfo[i].linkname){
+          newShopImg = `<img src="img/sub1/${shopsInfo[i].photo}" alt="#" />`;
           newShopInfo += `<p id="shop_type">${shopsInfo[i].type}</p>`;
           newShopInfo += `<h2 id="shop_name">${shopsInfo[i].name}</h2>`;
           newShopInfo += `<div class="shop_contact">`;
@@ -28,6 +30,7 @@ xhr.onload = function(){
           newShopInfo += `</div>`;
         }
         document.getElementById('newShopInfo').innerHTML = newShopInfo;
+        document.getElementById('newShopImg').innerHTML = newShopImg;
         // 지점 바꾸면 드랍다운 없어지고 지점리스트 slideUp
         $('.shopDropdown').fadeOut().find('ul.shop-dropdown').children('li').slideUp();
       }
@@ -45,7 +48,14 @@ $(function () {
     $(".sideMenu").css("left", "-100%");
     console.log("first");
   });
-
+  
+  // Lang Icon
+  $('.langIcon').on('click',function(){
+    $('ul.hdrLang li').slideToggle();
+  })
+  $('ul.hdrLang li').on('click',function(){
+    $('ul.hdrLang li').slideToggle();
+  })
   // Search Icon
   $(".searchIcon").on("click", function () {
     $(".searchWrap").slideToggle();
