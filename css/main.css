@@ -123,6 +123,7 @@ h4 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .hdrWrap header nav ul.hdrLang li {
+  display: none;
   text-align-last: left;
   padding: 10px;
 }
